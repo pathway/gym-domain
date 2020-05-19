@@ -2,6 +2,8 @@
 
 Reinforcement learning gyms for experimenting with domain generalization, domain adaptation, and robustness to domain shift.
 
+Thanks to [Bill Tubbs](https://twitter.com/biletubes) for inspiration via his https://github.com/billtubbs/gym-CartPole-bt-v0!
+
 #### DomainCartPole-v0
 
 - based on OpenAI's https://github.com/openai/gym/blob/master/gym/envs/classic_control/cartpole.py
