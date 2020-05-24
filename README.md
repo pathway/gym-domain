@@ -14,6 +14,31 @@ Usage:
 env = gym.make('DomainCartPole-v0', gravity=20.0)
 
 env = gym.make('DomainCartPole-v0', half_length=5.0, tau=0.02)
+
+# constructor with all defaults:
+env = gym.make('DomainCartPole-v0', gravity=9.8, mass_factor=1.0, mass_polecart_ratio=0.1, half_length=0.5, 
+        force_mag=10.0, tau = 0.02, max_steps=500):
+```
+
+Observations:
+- env parameters are appended to observation
+```
+Type: Box(4)
+Num	Observation                 Min         Max
+
+# Original cartpole obs:
+0	Cart Position             -4.8            4.8
+1	Cart Velocity             -Inf            Inf
+2	Pole Angle                -24 deg         24 deg
+3	Pole Velocity At Tip      -Inf            Inf
+
+# Added for gym-domain
+4	gravity                   -Inf            Inf
+5	mass_factor               -Inf            Inf
+6	mass_polecart_ratio       -Inf            Inf
+7	length                    -Inf            Inf
+8 force_mag                 -Inf            Inf
+
 ```
 
 ##### Results
