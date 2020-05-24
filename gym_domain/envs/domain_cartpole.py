@@ -26,15 +26,18 @@ class DomainCartPoleEnv(gym.Env):
     Observation: 
         Type: Box(4)
         Num	Observation                 Min         Max
+        
+        # Original cartpole obs:
         0	Cart Position             -4.8            4.8
         1	Cart Velocity             -Inf            Inf
         2	Pole Angle                 -24 deg        24 deg
         3	Pole Velocity At Tip      -Inf            Inf
-        Added:
-        3	Pole Velocity At Tip      -Inf            Inf
-        3	Pole Velocity At Tip      -Inf            Inf
-        3	Pole Velocity At Tip      -Inf            Inf
-        3	Pole Velocity At Tip      -Inf            Inf
+        # Added for gym-domain
+        4	gravity                   -Inf            Inf
+        5	mass_factor               -Inf            Inf
+        6	mass_polecart_ratio       -Inf            Inf
+        7	length                    -Inf            Inf
+        8   force_mag                 -Inf            Inf
 
     Actions:
         Type: Discrete(2)
