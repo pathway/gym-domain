@@ -11,12 +11,13 @@ Thanks to [Bill Tubbs](https://twitter.com/biletubes) for inspiration via his ht
 
 Usage:
 ```
-env = gym.make('DomainCartPole-v0', gravity=20.0)
+import gym_domain
 
-env = gym.make('DomainCartPole-v0', half_length=5.0, tau=0.02)
+env1 = gym.make('DomainCartPole-v0', gravity=20.0)
+env2 = gym.make('DomainCartPole-v0', half_length=5.0, tau=0.02)
 
 # constructor with all defaults:
-env = gym.make('DomainCartPole-v0', gravity=9.8, mass_factor=1.0, mass_polecart_ratio=0.1, half_length=0.5, 
+env3 = gym.make('DomainCartPole-v0', gravity=9.8, mass_factor=1.0, mass_polecart_ratio=0.1, half_length=0.5, 
         force_mag=10.0, tau = 0.02, max_steps=500):
 ```
 
